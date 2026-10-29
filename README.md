@@ -4,22 +4,20 @@ VoyageTrends MCP server - unified MCP for VoyageTrends LLC (Digital-Shore, Shore
 
 ## Status
 - Repository created and ready
+- MCP server code pushed (Next.js + mcp-handler)
 - Target domain on Whop: `voyagetrends-net.whop.site` (ready)
 - Vercel project `voyagetrends-net-mcp` exists (domain connection pending team permissions)
 
-## Next steps for connection
-1. Push MCP server code to this repository (main branch).
-2. Connect the repo to Vercel project `voyagetrends-net-mcp` (or deploy manually).
-3. Point or use `voyagetrends-net.whop.site` as the public endpoint for the MCP product.
-4. Create the corresponding product/membership on the Whop account linked to that domain.
+## Endpoint
+Once deployed: `https://voyagetrends-net-mcp.vercel.app/api/mcp` (or custom domain)
 
-## Structure (suggested)
-```
-/
-├── README.md
-├── package.json          # or requirements.txt / go.mod depending on stack
-├── src/ or mcp/         # MCP server implementation
-└── .env.example
-```
+## Tools available
+- `get_brands_status`: Status of the 3 brands
+- `get_ops_summary`: Operational summary
+
+## Next steps for connection
+1. Connect this repo to the existing Vercel project `voyagetrends-net-mcp`.
+2. Point or use `voyagetrends-net.whop.site` as the public endpoint for the MCP product.
+3. Create the corresponding product/membership on the Whop account linked to that domain.
 
 Owner: VoyageTrends LLC / Milton Maradiaga
